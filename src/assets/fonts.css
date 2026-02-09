@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "Libre Franklin";
+  src: url("../assets/LibreFranklin-Regular.ttf") format("truetype");
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Libre Franklin SemiBold";
+  src: url("../assets/LibreFranklin-SemiBold.ttf") format("truetype");
+  font-display: swap;
+  font-style: normal;
+}
