@@ -1,5 +1,3 @@
-import Navigation from "./Navigation";
-
 export default function HeroSection() {
   return (
     <>
@@ -11,12 +9,12 @@ export default function HeroSection() {
         <div className="herosection-container__subsection">
           <div className="container">
             <p>
-              Hi, my name is Elma. I work as a frontend developer and web
-              designer in Sweden. I'm driven to the stories people create
-              through their interactions with different kinds of interfaces and
-              technologies. I aim to design user interfaces that are reliable
-              and accessible, built with a solid foundation in human-computer
-              interaction.
+              Hi, my name is <span className="emphasized">Elma</span>. I work as
+              a frontend developer and web designer in Sweden. I'm driven to the
+              stories people create through their interactions with different
+              kinds of interfaces and technologies. I aim to design user
+              interfaces that are reliable and accessible, built with a solid
+              foundation in human-computer interaction.
             </p>
           </div>
           <div className="btn yellow">

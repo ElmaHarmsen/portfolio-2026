@@ -40,14 +40,14 @@ const allProjects = [
     description:
       "Project in The Complete JavaScript Course 2025: From Zero to Expert. Search recipes, save and add your own favourite recipes to the collection, and adjust to match ingredients to your serving size.",
     img: forkify,
-    link: "#",
+    link: "https://jscourse-forkifyproject.netlify.app/",
   },
   {
     id: 4,
     name: "UI/UX Case Study",
     skills: ["Ideation", "Requirements", "Prototyping", "User testing"],
     description:
-      "The objective of the project was to lower the environmental impact of modern consumer culture in fashion by extending garment life cycles through circular use in the Uppsala student community. The application encourages consumer-to-consumer garment reuse through locally organised clothing swap events.",
+      "The project's objective was to lower the environmental impact of modern consumer culture in fashion by extending garment life cycles through circular use in the Uppsala student community. The application encourages consumer-to-consumer garment reuse through locally organised clothing swap events.",
     img: fynder,
     link: "#",
   },
@@ -93,7 +93,7 @@ export default function Project() {
             </a>
           </div>
         </div>
-        <div className="img-bg">
+        <div className="img-container">
           <img src={project.img} className="img" alt={project.name} />
         </div>
       </>
