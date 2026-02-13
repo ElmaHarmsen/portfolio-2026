@@ -54,7 +54,7 @@ const allProjects = [
 ];
 
 export default function Project() {
-  const [projects, setProjects] = useState(allProjects);
+  const [projects] = useState(allProjects);
 
   return (
     <>

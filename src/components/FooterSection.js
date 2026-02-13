@@ -1,4 +1,3 @@
-import Navigation from "./Navigation";
 import linkedin from "../assets/icons/logo--linkedin.svg";
 import github from "../assets/icons/logo--github.svg";
 
