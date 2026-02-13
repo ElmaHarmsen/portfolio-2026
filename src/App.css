@@ -4,6 +4,17 @@
   margin: 0 1.5rem;
 }
 
+body {
+  background-color: #f4f4f3;
+}
+
+h1,
+h2,
+h3,
+p {
+  color: #1b1b1b;
+}
+
 h1 {
   font-size: 1.5rem;
   line-height: 32px;
@@ -11,8 +22,13 @@ h1 {
 }
 
 h2 {
+  font-size: 1.5rem;
+  line-height: 32px;
+  margin: 0;
+}
+
+h3 {
   font-size: 0.875rem;
-  font-family: "Libre Franklin SemiBold";
   margin: 0;
 }
 
@@ -22,11 +38,61 @@ p {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 .link {
-  display: flex;
-  flex-flow: row;
-  column-gap: 4px;
-  align-items: center;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #1b1b1b;
+  position: relative;
+}
+
+.btn {
+  background-repeat: no-repeat;
+  background-size: 100% 10px; /* width height */
+  background-position: 0% 100%;
+  padding: 0 0.25rem;
+  cursor: pointer;
+  width: max-content;
+  transition: background-size 0.4s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.btn:hover {
+  background-size: 100% 100%;
+}
+
+.btn.yellow {
+  background-image: linear-gradient(#ffdb58);
+}
+
+.btn.red {
+  background-image: linear-gradient(#b2e3b5);
+}
+
+.btn.green {
+  background-image: linear-gradient(#a2dac0);
+}
+
+.highlight-on-hover {
+  background-image: linear-gradient(#ffdb58);
+  background-size: 100% 0%; /* width height */
+}
+
+.highlight-on-hover:hover {
+  background-size: 100% 100%;
+}
+
+.logo {
+  width: 2rem;
+}
+
+.highlight {
+  background-image: linear-gradient(#ffdd63, #ffdd63);
+  background-repeat: no-repeat;
+  background-size: 100% 100%; /* width height */
+  background-position: 0% 100%;
 }
 
 @media (min-width: 450px) {
@@ -45,7 +111,13 @@ p {
   }
 
   h2 {
+    font-size: 2.25rem;
+  }
+
+  h3 {
     font-size: 1.125rem;
+    line-height: 28px;
+    font-family: "Libre Franklin Medium";
   }
 
   p {

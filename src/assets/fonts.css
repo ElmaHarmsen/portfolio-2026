@@ -4,6 +4,14 @@
   font-display: swap;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "Libre Franklin Medium";
+  src: url("../assets/LibreFranklin-Medium.ttf") format("truetype");
+  font-display: swap;
+  font-style: normal;
+}
+
 @font-face {
   font-family: "Libre Franklin SemiBold";
   src: url("../assets/LibreFranklin-SemiBold.ttf") format("truetype");

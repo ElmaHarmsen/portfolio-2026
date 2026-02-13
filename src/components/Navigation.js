@@ -2,9 +2,15 @@ export default function Navigation() {
   return (
     <>
       <div className="navigation-container">
-        <h2 className="item">Projects</h2>
-        <h2 className="item">About</h2>
-        <h2 className="item">Connect</h2>
+        <div className="btn highlight-on-hover">
+          <h3>Projects</h3>
+        </div>
+        <div className="btn highlight-on-hover">
+          <h3>About</h3>
+        </div>
+        <div className="btn highlight-on-hover">
+          <h3>Connect</h3>
+        </div>
       </div>
     </>
   );
