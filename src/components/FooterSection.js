@@ -5,6 +5,7 @@ export default function FooterSection() {
   return (
     <>
       <div className="footersection-container">
+        <h2>Connect here</h2>
         <div className="btn yellow">
           <a href="mailto:contact.elma@tuta.com">
             <h3>contact.elma@tuta.com</h3>
