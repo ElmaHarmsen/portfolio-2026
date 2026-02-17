@@ -3,29 +3,49 @@ import me2 from "../assets/me2.jpg";
 import lego from "../assets/lego.jpg";
 import fire from "../assets/fire.png";
 import dreamcatcher from "../assets/dreamcatcher.jpg";
+import city from "../assets/city.jpg";
 
 const images = [
   {
-    img: lego,
-    description: "Lego photography is something I like to do while travelling",
-    alt: "lego photography of a knight with a wolf standing on a stone in nature",
     columnStart: 2,
     columnSpan: 3,
+    images: [
+      {
+        img: lego,
+        description:
+          "Lego photography is something I like to do while travelling",
+        alt: "lego photography of a knight with a wolf standing on a stone in nature",
+      },
+    ],
   },
   {
-    img: fire,
-    description:
-      "FLUXIT: Favourite artpiece from Allt Ljus Uppsala light festival 2025",
-    alt: "artpiece of a big fire made out of light for the Uppsala light festival",
     columnStart: 5,
     columnSpan: 4,
+    images: [
+      {
+        img: fire,
+        description:
+          "FLUXIT: Favourite artpiece from Allt Ljus Uppsala light festival 2025",
+        alt: "artpiece of a big fire made out of light for the Uppsala light festival",
+        gap: 3,
+      },
+      {
+        img: city,
+        description: "Exploring new cities and nature",
+        alt: "artpiece of a big dreamcater made out of light for the Uppsala light festival",
+      },
+    ],
   },
   {
-    img: dreamcatcher,
-    description: "Dreamcatcher: Second favourite artpiece from Allt Ljus",
-    alt: "artpiece of a big dreamcater made out of light for the Uppsala light festival",
     columnStart: 9,
     columnSpan: 3,
+    images: [
+      {
+        img: dreamcatcher,
+        description: "Dreamcatcher: Second favourite artpiece from Allt Ljus",
+        alt: "artpiece of a big dreamcater made out of light for the Uppsala light festival",
+      },
+    ],
   },
 ];
 
@@ -98,15 +118,24 @@ export default function About() {
         </p>
       </div>
 
-      {images.map((item) => (
+      <div className="text-container interests-title">
+        <h2>Interests that shape who I am</h2>
+      </div>
+
+      {images.map((item, index) => (
         <div
-          className="img"
+          key={index}
+          className="img-interests"
           style={{
             gridColumn: ` ${item.columnStart} / span ${item.columnSpan}`,
           }}
         >
-          <img src={item.img} alt={item.alt} />
-          <p>{item.description}</p>
+          {item.images.map((imgItem, imgIndex) => (
+            <div key={imgIndex} style={{ marginBottom: `${imgItem.gap}rem` }}>
+              <img src={imgItem.img} alt={imgItem.alt} />
+              <p>{imgItem.description}</p>
+            </div>
+          ))}
         </div>
       ))}
     </>

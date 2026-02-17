@@ -77,7 +77,6 @@ export default function Project() {
       <>
         <div className="project-container">
           <h2>{project.name}</h2>
-
           <div className="project-container__content">
             <div className="container">
               <div className="skills">
@@ -88,9 +87,11 @@ export default function Project() {
               </div>
               <p>{project.description}</p>
             </div>
-            <a href={project.link} className="btn yellow">
-              <h3>Open {project.name}</h3>
-            </a>
+            <div className="btn yellow">
+              <a href={project.link}>
+                <h3>Open {project.name}</h3>
+              </a>
+            </div>
           </div>
         </div>
         <div className="img-container">

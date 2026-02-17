@@ -5,10 +5,12 @@ export default function FooterSection() {
   return (
     <>
       <div className="footersection-container">
-        <a href="mailto:contact.elma@tuta.com" className="btn yellow">
-          <h3>contact.elma@tuta.com</h3>
-        </a>
-        <div className="container-socials">
+        <div className="btn yellow">
+          <a href="mailto:contact.elma@tuta.com">
+            <h3>contact.elma@tuta.com</h3>
+          </a>
+        </div>
+        <div className="footersection-container__socials">
           <a href="https://www.linkedin.com/in/elma-harmsen/" target="blank">
             <img src={linkedin} className="logo" alt="logo linkedin" />
           </a>
