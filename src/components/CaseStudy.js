@@ -3,8 +3,6 @@ import eventsExtended from "../assets/casestudy/events-extended.png";
 import fashionHabits from "../assets/casestudy/fashion-habits.png";
 import discardHabits from "../assets/casestudy/discard-habits.png";
 import navigationMap from "../assets/casestudy/navigation-map.png";
-import infographic from "../assets/casestudy/infographic.png";
-import logo from "../assets/casestudy/fynder-logo.png";
 import newEvent from "../assets/casestudy/new-event.png";
 import eventsLofi from "../assets/casestudy/events-lofi.jpeg";
 import profileLofi from "../assets/casestudy/profile-lofi.jpeg";
