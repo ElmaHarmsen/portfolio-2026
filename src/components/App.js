@@ -5,14 +5,14 @@ import FooterSection from "./FooterSection";
 import About from "./About";
 import CaseStudy from "./CaseStudy";
 import { BrowserRouter, Routes, Route } from "react-router";
-import ScrollToTop from "./ScrollToTop";
+import ScrollHandler from "./ScrollHandler";
 // import components
 
 export default function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <ScrollToTop />
+        <ScrollHandler />
         <Navigation />
         <Routes>
           <Route

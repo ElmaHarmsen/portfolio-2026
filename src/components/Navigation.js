@@ -16,9 +16,9 @@ export default function Navigation() {
         {/* <div className="btn highlight-on-hover">
           <h3>About</h3>
         </div> */}
-        <div className="btn highlight-on-hover">
+        <NavLink to="/#footer" className="btn highlight-on-hover">
           <h3>Connect</h3>
-        </div>
+        </NavLink>
       </div>
     </>
   );

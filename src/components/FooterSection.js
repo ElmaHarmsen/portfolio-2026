@@ -4,7 +4,7 @@ import github from "../assets/icons/logo--github.svg";
 export default function FooterSection() {
   return (
     <>
-      <div className="footersection-container">
+      <div className="footersection-container" id="footer">
         <h2>Connect here</h2>
         <div className="btn yellow">
           <a href="mailto:contact.elma@tuta.com">
