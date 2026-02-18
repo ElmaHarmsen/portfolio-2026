@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { NavLink } from "react-router";
 import travelList from "../assets/travel-list.png";
 import mapty from "../assets/mapty.png";
 import forkify from "../assets/forkify.png";
@@ -90,11 +91,11 @@ export default function Project() {
               </div>
               <p>{project.description}</p>
             </div>
-            <div className="btn yellow">
+            <NavLink to={project.link} className="btn yellow">
               <a href={project.link} target={project.target}>
                 <h3>Open {project.name}</h3>
               </a>
-            </div>
+            </NavLink>
           </div>
         </div>
         <div className="img-container">
