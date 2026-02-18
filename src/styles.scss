@@ -8,7 +8,8 @@
 .herosection-container,
 .project-container,
 .about-container,
-.footersection-container {
+.footersection-container,
+.casestudy-container {
   display: flex;
   flex-flow: column nowrap;
   row-gap: 2rem;
@@ -71,6 +72,11 @@
   }
 }
 
+.img-container.alignment-left {
+  margin-top: 0;
+  margin-bottom: -1rem;
+}
+
 .img-interests {
   img {
     width: 100%;
@@ -117,6 +123,7 @@
   }
 
   .project-container,
+  .about-container,
   .about-container {
     grid-column: 2 / 6;
     display: flex;
@@ -144,7 +151,8 @@
   }
 
   .img-container,
-  .text-container {
+  .text-container,
+  .casestudy-container {
     grid-column: 7 / 12;
     row-gap: 3rem;
     justify-content: center;
@@ -155,12 +163,16 @@
     }
   }
 
-  .text-container.interests-title {
-    grid-column: 2 / 12;
+  .text-container.full-width {
+    grid-column: 2 / 10;
   }
 
   .img-container {
+    display: flex;
     align-items: center;
-    margin: 3rem 0;
+  }
+
+  .img-container.alignment-left {
+    grid-column: 2 / 6;
   }
 }

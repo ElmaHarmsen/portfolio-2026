@@ -52,10 +52,11 @@ a {
 }
 
 .link {
-  text-decoration: none;
+  text-decoration: underline;
   white-space: nowrap;
   color: #121314;
   position: relative;
+  font-family: "Libre Franklin Medium";
 }
 
 .logo {

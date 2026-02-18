@@ -118,7 +118,7 @@ export default function About() {
         </p>
       </div>
 
-      <div className="text-container interests-title">
+      <div className="text-container full-width">
         <h2>Interests that shape who I am</h2>
       </div>
 

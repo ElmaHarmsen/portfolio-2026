@@ -12,7 +12,8 @@ const allProjects = [
     description:
       "Project in The Ultimate React Course 2025: React, Next.js, Redux & More. Add items to your packing list, sort items by description or packed status, and check how many items you already have packed.",
     img: travelList,
-    link: "#",
+    link: "https://jscourse-travellist.netlify.app/",
+    target: "blank",
   },
   {
     id: 2,
@@ -27,6 +28,7 @@ const allProjects = [
       "Project in The Complete JavaScript Course 2025: From Zero to Expert. Easily track your cycling and running workouts on a map, and record details like distance, duration, elevation gain and cadence.",
     img: mapty,
     link: "https://jscourse-mapty.netlify.app/",
+    target: "blank",
   },
   {
     id: 3,
@@ -41,6 +43,7 @@ const allProjects = [
       "Project in The Complete JavaScript Course 2025: From Zero to Expert. Search recipes, save and add your own favourite recipes to the collection, and adjust to match ingredients to your serving size.",
     img: forkify,
     link: "https://jscourse-forkifyproject.netlify.app/",
+    target: "blank",
   },
   {
     id: 4,
@@ -49,7 +52,7 @@ const allProjects = [
     description:
       "The project's objective was to lower the environmental impact of modern consumer culture in fashion by extending garment life cycles through circular use in the Uppsala student community. The application encourages consumer-to-consumer garment reuse through locally organised clothing swap events.",
     img: fynder,
-    link: "#",
+    link: "/casestudy",
   },
 ];
 
@@ -88,7 +91,7 @@ export default function Project() {
               <p>{project.description}</p>
             </div>
             <div className="btn yellow">
-              <a href={project.link}>
+              <a href={project.link} target={project.target}>
                 <h3>Open {project.name}</h3>
               </a>
             </div>

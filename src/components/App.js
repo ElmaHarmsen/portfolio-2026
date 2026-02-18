@@ -3,6 +3,7 @@ import Navigation from "./Navigation";
 import Projects from "./Projects";
 import FooterSection from "./FooterSection";
 import About from "./About";
+import CaseStudy from "./CaseStudy";
 import { BrowserRouter, Routes, Route } from "react-router";
 // import components
 
@@ -22,6 +23,7 @@ export default function App() {
             }
           />
           <Route path="/about" element={<About />} />
+          <Route path="/casestudy" element={<CaseStudy />} />
         </Routes>
         <FooterSection />
       </BrowserRouter>
