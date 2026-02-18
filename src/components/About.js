@@ -66,8 +66,9 @@ export default function About() {
         <h2>About me</h2>
         <div className="text-container small-gap">
           <p>
-            Originally from the Netherlands and now living in Sweden, I work as
-            a <span className="emphasized">Frontend Developer</span> and{" "}
+            Hi, my name is Elma. Originally from the Netherlands and now living
+            in Sweden, I work as a{" "}
+            <span className="emphasized">Frontend Developer</span> and{" "}
             <span className="emphasized">Web Designer</span>, driven by a strong
             interest in interaction design. I enjoy bringing design and
             development together to better understand how people experience
