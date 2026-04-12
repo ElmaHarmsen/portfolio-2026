@@ -179,18 +179,19 @@ const designProcessSteps = [
 
 const prototypingProcessSteps = [
   {
-    title: "Lofi prototyping",
-    description:
-      "A total of three iterations were completed during the prototyping and user testing phase, where each iteration tested the UI with users and identified areas for improvement. The third iteration resulted in the final high fidelity prototype.",
-  },
-  {
-    title: "User testing",
+    title: "Prototyping & Testing",
     description: (
       <>
-        For each user testing iteration were goals established to ensure the
-        user tests were centred within a realistic scope. Users were given paper
-        prototypes to interact with, and afterwards were asked about their
-        experience and understanding of the app. Results were analysed with a{" "}
+        A total of three iterations were completed during the prototyping and
+        user testing phase, where each iteration tested the UI with five users
+        and identified areas for improvement. While the first two iterations
+        were focussed around rapid prototyping with low fidelity mockups, the
+        third iteration resulted in the final high fidelity prototype. For each
+        user testing iteration were goals established to ensure the user tests
+        were centred within a realistic scope and that only specific problems
+        were addressed in each iteration. Users were given paper prototypes to
+        interact with, and afterwards were asked about their experience and
+        understanding of the app. Results were analysed with a{" "}
         <a
           href="https://en.wikipedia.org/wiki/Thematic_analysis"
           target="blank"
@@ -204,6 +205,11 @@ const prototypingProcessSteps = [
     ),
   },
   {
+    title: "Findings",
+    description:
+      "The findings from the first two user testing iterations were centred around different scopes: the perceived purpose of the app, and user preferences related to the UI. The purpose of the app was accurately perceived as a place to create events to share clothes and save them from becoming trash. Interesting findings on the scope around user preferences include the need to filter events based on clothing size and style as well as ways to connect with people through the app, such as through groups and friends. These findings were used to inform design improvements to the prototype in the final iteration, where testing was centred around the individual app screens.",
+  },
+  {
     title: "Outcomes",
     description:
       "This UI/UX case study aimed to extend clothing garment life cycles through circular use, and increase the awareness on the negative environmental impacts of fast fashion. The solution introduced a new approach to reduce fashion waste  through organised clothing swap events within local communities, such as student dormitories and nations. The solution addresses specific challenges that were identified among stakeholders regarding the use and recycling of clothing, and uses an application to connect people and create opportunities for fashion recycling through clothing swap events.",
@@ -214,8 +220,9 @@ export default function CaseStudy() {
   return (
     <>
       <h1 className="text-container full-width">
-        UI/UX Case Study: Fynder - The app that aims to extend the lifecycle of
-        clothes and break wasteful consumer habits
+        UI/UX Case Study <br></br>
+        Fynder - The app that aims to extend the lifecycle of clothes and break
+        wasteful consumer habits
       </h1>
       {mainImages.map((item, index) => (
         <div
@@ -284,6 +291,23 @@ export default function CaseStudy() {
             </div>
           </div>
         </>
+      ))}
+
+      {mainImages.map((item, index) => (
+        <div
+          key={index}
+          className="img-interests"
+          style={{
+            gridColumn: ` ${item.columnStart} / span ${item.columnSpan}`,
+          }}
+        >
+          {item.images.map((imgItem, imgIndex) => (
+            <div key={imgIndex} style={{ marginBottom: `${imgItem.gap}rem` }}>
+              <img src={imgItem.img} alt={imgItem.alt} />
+              <p>{imgItem.description}</p>
+            </div>
+          ))}
+        </div>
       ))}
     </>
   );
