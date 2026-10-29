@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #f4f4f3;
+  background-color: #f5f5f4;
 }
 
 h1,
@@ -42,7 +42,7 @@ a {
 }
 
 .btn {
-  background-color: #ffdb58;
+  background-color: #d6d3d1;
   padding: 0.375rem 0.25rem;
   width: max-content;
 }
@@ -60,11 +60,12 @@ a {
 }
 
 .logo {
-  width: 2rem;
+  height: 28px;
+  width: auto;
 }
 
 .highlight {
-  background-image: linear-gradient(#ffdd63, #ffdd63);
+  background-image: linear-gradient(#d6d3d1, #d6d3d1);
   background-repeat: no-repeat;
   background-size: 100% 100%; /* width height */
   background-position: 0% 100%;
@@ -120,15 +121,20 @@ a {
   }
 
   .btn.yellow {
-    background-image: linear-gradient(#ffdb58);
+    background-image: linear-gradient(#d6d3d1);
   }
 
   .btn.highlight-on-hover {
-    background-image: linear-gradient(#ffdb58);
+    background-image: linear-gradient(#d6d3d1);
     background-size: 100% 0%; /* width height */
   }
 
   .btn.highlight-on-hover:hover {
     background-size: 100% 100%;
+
+    /* h3 {
+      color: #fff;
+      transition-delay: 300ms;
+    } */
   }
 }
